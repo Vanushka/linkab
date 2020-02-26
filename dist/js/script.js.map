@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["getDate","date","console","log","Date","$"],"mappings":"aAAA,SAASA,QAAQC,GACfC,QAAQC,IAAIF,GACb,IAAAA,KAAA,IAAAG,KAKDF,QAAQC,IAAIE,EAAE,OAGdL,QAAQC","file":"script.js","sourcesContent":["function getDate(date) {\n  console.log(date);\n}\n\nlet date = new Date();\n\n \nconsole.log($('h1'));\n\n \ngetDate(date);"]}

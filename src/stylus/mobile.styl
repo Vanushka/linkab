@@ -1,0 +1,306 @@
+@media (max-device-width: 768px)
+  .container
+    width: 90%
+
+  header
+    width: 100%
+    grid-template-columns: 10% 40% 50%
+    .burger
+      z-index: 10
+      display: block
+      width: 20px
+      height: 3px
+      margin-left: 20px
+      border-radius: 16px
+      background: #000000
+      transition-duration: .3s
+      &:before
+        content: ""
+        width: 10px
+        height: 3px
+        display: block
+        margin-top: -5px
+        border-radius: 16px
+        background: #000000
+        transition-duration: .3s
+      &:after
+        content: ""
+        width: 16px
+        height: 3px
+        display: block
+        margin-top: 7px
+        border-radius: 16px
+        background: #000000
+        transition-duration: .3s
+      &.toggle
+        width: 16px
+        &:before
+          width: 20px
+          transition-duration: .3s
+        &:after
+          width: 10px
+          transition-duration: .3s
+    .nav-links
+      z-index: 9
+      position: absolute
+      left: 0
+      top: 0
+      width: 100%
+      height: 100%
+      display: grid
+      opacity: 0
+      width: 100%
+      grid-gap: 30px
+      padding-top: 108px
+      background: #ffffff
+      grid-template-rows: repeat(10, 25px)
+      transform: translateX(-300px)
+      border-radius: 100% 100% 100% 100%
+      transition: all 900ms cubic-bezier(.9, 0, .33, 1)
+      &.fade-in
+        z-index: 5
+        opacity: 1
+        border-radius: 0%
+        transform: translateX(0px)
+      a
+        z-index: 10
+        width: auto
+        height: 25px
+        margin-left: 83px
+        margin-bottom: 30px
+        color: #000000
+        font-weight: 600
+        font-size: 20px
+        line-height: 24px
+        &:hover
+          color: #5D4FFF
+      .feedback-mobile
+        width: 100%
+        margin-top: 30px
+        a
+          left: 0
+          width: 100%
+          height: 48px
+          display flex
+          margin: 0 auto
+          background: #5D4FFF
+          border-radius: 6px
+          font-family: Gilroy
+          font-style: normal
+          font-weight: 600
+          font-size: 14px
+          line-height: 17px
+          color: #FFFFFF
+          align-items: center
+          justify-content: center
+          &:after
+            content: ""
+            height: 9px
+            width: 70%
+            display: block
+            margin-top: 22px
+            filter: blur(8px)
+            position absolute
+            background: #5D4FFF
+    .logo
+      width: 109px
+      height: 33px
+    .links-block
+      display: none
+    .feedback
+      a
+        width: 129px
+        height: 48px
+
+  .main-block
+    grid-template-columns: 1fr
+    .left
+      z-index 1
+      margin-left: 0
+      h2
+        font-size: 33px
+        line-height: 116.2%
+      p
+        width: 238px
+      a.geen-button
+        width: 100%
+        margin-top: 70%
+    .right
+      width: 95%
+      margin-top: 35px
+      position: absolute
+      background-image: url(../img/png/main-banner-mobile.png)
+      background-size: auto 100%
+      background-position: 100%
+
+  .statistics
+    margin-top: 50px
+    grid-template-columns: 48%
+    grid-template-rows: auto
+    grid-template-areas:
+    "first first"\
+    "second third"\
+    "four four"\
+    "five five"
+    > * 
+      .text
+        span.count
+          font-size: 72px
+        p
+          font-size: 16px
+    .students
+      height: 198px
+      .icon
+        left: 24px
+      .text
+        display: flex
+        margin-top: 80px
+        margin-left: 16px
+        align-items: baseline
+        span.count
+          font-size: 86px
+    .educational-programs, .teachers
+      height: 187px
+      .icon
+        display: none
+      .text
+        display: block
+        margin-top: 38px
+        margin-left: 18px
+        p
+          margin-left: 0
+          margin-top: 11px
+    .languages, .experience
+      height: 124px
+      .icon
+        top: 22px
+        right: 25px
+      .text
+        display: flex
+        margin-top: 19px
+        margin-left: 19px
+        align-items: baseline
+        span.count
+          font-size: 86px
+        p
+          margin-left: 11px
+
+  .logos-slider
+    width: 70%
+    .swiper-slide
+      width: 85px
+      img
+        width: 100%
+
+  .pagination
+    margin-top: -45px
+
+  .products
+    h3
+      margin-left: 0
+    .products-items
+      grid-gap: 16px
+      grid-template-columns: auto
+      grid-template-rows: auto
+      > *
+        height: 311px
+        &:after
+          margin: -13px auto
+        > *
+          margin-left: 20px !important
+        span.version
+          display: none
+        .text
+          margin-top: 40px
+        .prise
+          left: 0
+          height: 47px
+          bottom: 36px
+          grid-gap: 30px
+          margin-top: auto
+          align-items: center
+          justify-content: space-between
+          grid-template-columns: 1fr 1fr
+          a
+            width: 131px
+          span
+            margin-bottom: 0
+
+  .buy-block
+    height: 470px
+    justify-content: center
+    grid-template-columns: 100%
+    img
+      margin: 0 auto
+      margin-left: 30px
+    .text
+      width: 100%
+      text-align: center
+      p
+        font-size: 24px
+      span
+        font-size: 24px
+    a.geen-button
+      margin: 0 auto
+      margin-bottom: 30px
+
+  .block-description
+    grid-gap: 22px
+    grid-template-columns: auto
+    p
+      width: 100%
+      margin-left: 0
+    img
+      margin: 0 auto
+
+  .language-laboratories
+    margin-left: 0
+
+  .pluses
+    width: 100%
+    display: flex
+    padding-left: 0
+    overflow: scroll
+    position: relative
+    margin-bottom: 35px
+    justify-content: end
+    &::-webkit-scrollbar
+      width: 0
+    .plus
+      min-width: 203px
+      margin-right: 0
+      margin-left: 20px
+      margin-top: 0 !important
+
+  .language-class
+    margin-left: 0
+    .language-description
+      grid-gap: 30px
+      grid-template-rows: 1fr
+      grid-template-columns: 100%
+      p
+        width: 100% !important
+        margin-top: 20px
+        margin-left: 0 !important
+        &:last-child
+          grid-row-end: 4
+      img
+        width: 100%
+        margin: 0 auto !important
+        &:nth-child(2)
+          margin-left: -11px !important
+        &:nth-child(3)
+          margin-left: 5px !important
+
+  footer
+    width: 100%
+    margin-top: 25px
+    grid-template-columns: 1fr 1fr
+    .logo
+      margin-left: 0
+    .feedback
+      margin-right: 0
+      a
+        width: 137px
+    .links-block
+      display: none
